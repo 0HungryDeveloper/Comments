@@ -1,0 +1,11 @@
+<button class="btn-options" (click)="onPressedOptions()">
+	<ul class="btn-options__list" *ngIf="showOptionsList">
+		<li>Option</li>
+		<li>Option</li>
+		<li>Option</li>
+	</ul>
+	<span class="material-symbols-outlined">
+		more_vert
+	</span>
+</button>
+<div [ngClass]="{ 'active' : showOptionsList }" id="cover" (click)="onPressedCover()"></div>
